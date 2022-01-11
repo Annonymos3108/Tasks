@@ -23,9 +23,26 @@ std::string reverseString(std::string str)
 ---
 Даны два массива:
 `[1, 2, 3, 2, 0]` и `[5, 1, 2, 7, 3, 2]`</br>
-Надо вернуть их пересечение `[1, 2, 2, 3]` (порядок неважен)
+Надо вернуть их пересечение `[1, 2, 2, 3]` (порядок неважен)</br>
+[Решение, код на C++](./Solutions/task02.cpp)
 
-```
+```C++
+std::vector<int> intersection(std::vector<int> arrA, std::vector<int> arrB)
+{
+    std::vector<int> temp;
+    for (int i = 0; i < arrA.size(); i++) 
+    {
+        for (int j = 0; j < arrB.size(); j++) 
+        {
+            if (arrA[i] == arrB[j])
+            {
+                temp.push_back(arrA[i]);
+                break;           
+            }
+        }
+    }
+    return temp;
+}
 ```
 
 </br></br>
