@@ -17,6 +17,16 @@ std::string reverseString(std::string str)
 }
 ```
 
+Sample input:
+```
+Lorem ipsum dolor sit amet.
+```
+
+Sample output:
+```
+.tema tis rolod muspi meroL
+```
+
 </br></br>
 
 ### Задача 2
@@ -43,6 +53,16 @@ std::vector<int> intersection(std::vector<int> arrA, std::vector<int> arrB)
     }
     return temp;
 }
+```
+
+Sample input:
+```
+[1, 2, 3, 2, 0], [5, 1, 2, 7, 3, 2]
+```
+
+Sample output:
+```
+[1, 2, 3, 2]
 ```
 
 </br></br>
